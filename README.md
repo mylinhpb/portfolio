@@ -12,3 +12,10 @@ In this portfolio, I will show the knowledge of
 * Git and GitHub
 
 A secondary aim of this portfolio is to centralize my own knowledge regarding technical writing and serve as a documentation for myself.
+
+Writing samples:
+- [blog article](how-to-blog-article.md)
+- tutorial
+- how-to guide
+- reference
+- resource
