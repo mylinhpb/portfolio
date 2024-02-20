@@ -19,3 +19,4 @@ Writing samples:
 - how-to guide
 - reference
 - resource
+- style guide
