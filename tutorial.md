@@ -14,9 +14,8 @@ Before starting, make sure your account (e.g. Facebook account or GA4 account) h
     2. **Custom-schema connectors** allow complete freedom when composing your ***data source*** (e.g. [Google Ads](/docs/google-ads), [Facebook Ads](/docs/facebook-ads)).
 3. Click on **Add New Account** at the bottom of the drop-down and authorize the connection of your service to Dataddo.
 
-:::(Info) (**DATADDO TIP**)
-When you add a new account, you also create a new ***{{glossary.authorizer}}***. You can always [add more authorizers](/docs/authorized-services) or accounts later.
-:::
+> [!TIP]
+> When you add a new account, you also create a new ***authorizer***. You can always [add more authorizers](/docs/authorized-services) or accounts later.
 
 ![Account - Quickstart Create a Source](![image](https://github.com/mylinhpb/portfolio/assets/145331760/1048adfb-ea72-4a2f-843e-7f7fda2e717e)
 
