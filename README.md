@@ -1,5 +1,4 @@
-# portfolio
-This repository serves as My Linh Phung's technical writer portfolio.
+This repository serves as My Linh Phung's technical writing portfolio.
 The aim of this portfolio is to showcase the following skills
 * IA (information infrastructure)
 * Experience with documentation/knowledge base management
@@ -11,8 +10,6 @@ In this portfolio, I will show the knowledge of
 * Javascript
 * Git and GitHub
 
-A secondary aim of this portfolio is to centralize my own knowledge regarding technical writing and serve as a documentation for myself.
-
 Writing samples:
 - [blog article](how-to-blog-article.md)
 - tutorial
@@ -20,3 +17,5 @@ Writing samples:
 - reference
 - resource
 - style guide
+
+The secondary aim of this portfolio is to centralize my own knowledge regarding technical writing and serve as a documentation for myself.
