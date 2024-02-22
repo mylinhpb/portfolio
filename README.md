@@ -15,7 +15,7 @@ Writing samples:
 - [tutorial](tutorial.md)
 - how-to guide
 - reference
-- resource
+- [resource](resource.md)
 - style guide
 
 The secondary aim of this portfolio is to centralize my own knowledge regarding technical writing and serve as a documentation for myself.
