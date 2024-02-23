@@ -13,7 +13,7 @@ In this portfolio, I will show the knowledge of
 Writing samples:
 - [blog article](how-to-blog-article.md)
 - [tutorial](tutorial.md)
-- how-to guide
+- [how-to guide](how-to-guide.md)
 - reference
 - [resource](resource.md)
 - style guide
