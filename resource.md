@@ -12,26 +12,26 @@ When you connect your data, you use one of the following connector types:
 
 **Fixed-schema connectors** offer a pre-defined list of schemas (**datasets**) such as invoices or customers. While they limit customization options, these connectors are useful in standard use-cases thanks to a quick and straightforward setup.
 
-Connectors that fall under this category are e.g. [Mailchimp](/docs/mailchimp), [ExactOnline](/docs/exact-online), [Google Search Console](/docs/google-search-console).
+Connectors that fall under this category are e.g. [Mailchimp](https://docs.dataddo.com/docs/mailchimp), [ExactOnline](https://docs.dataddo.com/docs/exact-online), [Google Search Console](https://docs.dataddo.com/docs/google-search-console).
 
 <h2 id='#customschema-connectors'>Custom-Schema Connectors</h2>
 
 **Custom-schema connectors** enable dynamic schema definitions and they are tailored to work with services that involve custom attributes. These connectors offer a specialized solution for your unique data integration needs.
 
-Connectors that fall under this category are e.g. [Hubspot](/docs/hubspot), [Google Analytics 4](/docs/google-analytics-4), [Salesforce](/docs/salesforce), [Facebook Ads](/docs/facebook-ads).
+Connectors that fall under this category are e.g. [Hubspot](https://docs.dataddo.com/docs/hubspot), [Google Analytics 4](https://docs.dataddo.com/docs/google-analytics-4), [Salesforce](https://docs.dataddo.com/docs/salesforce), [Facebook Ads](https://docs.dataddo.com/docs/facebook-ads).
 
 <h2 id='#universal-connectors'>Universal Connectors</h2>
 
 **Universal connectors** are code-only connectors designed for granular, low-level interaction with a wide range of data systems. These connectors are highly customizable, offering a versatile option for diverse data integration requirements.
 
 Connectors that fall under this category are
-* [JSON](/docs/json-universal-connector), [XML](/docs/xml-universal-connector), [CSV](/docs/csv-universal-connector)
+* [JSON](https://docs.dataddo.com/docs/json-universal-connector), [XML](https://docs.dataddo.com/docs/xml-universal-connector), [CSV](https://docs.dataddo.com/docs/csv-universal-connector)
 * Webhook connectors for HTTP APIs
-* Database connectors like [MySQL](/docs/mysql), [Postgres](/docs/postgres), and [SQL Server](/docs/universal-sql-server).
+* Database connectors like [MySQL](https://docs.dataddo.com/docs/mysql), [Postgres](https://docs.dataddo.com/docs/postgres), and [SQL Server](https://docs.dataddo.com/docs/universal-sql-server).
 
 Connecting to various online data sources is straightforward. Our robust data transformation middleware enables connections to nearly any service with a **JSON, CSV, or XML-based API**. In most cases, you will be able to define the following parameters:
 * [HTTP Method](#http-methods)
-* [Transformation Pipeline](https://docs.dataddo.com/docs/transformation-pipeline)
+* [Transformation Pipeline](https://docs.dataddo.comhttps://docs.dataddo.com/docs/transformation-pipeline)
 * [HTTP Headers](#http-headers)
 * [HTTP Body](#http-body)
 
@@ -59,10 +59,11 @@ To process the data from these APIs, a brief **transformation script** is requir
 
 For services already supported by existing connectors, universal connectors are an alternative when more control and customization are required.
 
->[!NOTE] Related Articles
-> [Transformation Pipeline Examples](/docs/transformation-pipeline){target=`_blank`}
-> [List of Transformation Pipeline Stages](/docs/transformation-pipeline-stages){target=`_blank`}
-> [List of Transformation Pipeline Expression Operators](/docs/transformation-pipeline-expressions){target=`_blank`}
+> [!NOTE]
+> Related Articles
+> * [Transformation Pipeline Examples](https://docs.dataddo.com/docs/transformation-pipeline)
+> * [List of Transformation Pipeline Stages](https://docs.dataddo.com/docs/transformation-pipeline-stages)
+> * [List of Transformation Pipeline Expression Operators](https://docs.dataddo.com/docs/transformation-pipeline-expressions)
 
 
 <h3 id='#http-headers'>HTTP Headers</h3>
