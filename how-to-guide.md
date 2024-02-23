@@ -5,11 +5,16 @@
 This article provides an overview of **how to construct a data transformation script**, leveraging a [JSON](/docs/json-universal-connector)-like syntax akin to [MongoDB](/docs/mongodb)'s aggregation framework. In Dataddo, transformations are defined through a series of stages within a JSON array, with each stage representing a specific data operation.
 
 **To create an effective transformation script, you can follow these structured steps:**
+
 **Step 1**: [Understand Your Data](#step-1-understand-your-data)
-**Step 2**: [Define Your Objectives and Choose Your Operators](#step-2)
-**Step 3**: [Create Transformation Stages](#step-3)
-**Step 4**: [Assemble the Pipeline](#step-4)
-**Step 5**: [Final Script](e#step)
+
+**Step 2**: [Define Your Objectives and Choose Your Operators](#step-2-define-your-objectives-and-choose-your-operators)
+
+**Step 3**: [Create Transformation Stages](#step-3-create-transformation-stages)
+
+**Step 4**: [Assemble the Pipeline](#step-4-assemble-the-pipeline)
+
+**Step 5**: [Final Script](#step-5-final-script)
 
 **For practical applications and specific use cases, refer to the following sections:**
 * [Specific Transformation Pipeline Example with an Explanation](https://docs.dataddo.com/docs/transformation-pipeline-guide#specific-example-with-an-explanation)
@@ -29,6 +34,7 @@ Before choosing operators or defining stages, you must understand the structure 
 
 ## Step 2: Define Your Objectives and Choose Your Operators
 Decide what you want the transformed data to look like. In our example, you might want to:
+
 | Objective | Operator |
 |---|---|
 | Flatten `field1` so each `subfield1` value becomes part of a separate document.| **Flatten an array**: Use `$unwind` to deconstruct `field1`.|
@@ -36,9 +42,9 @@ Decide what you want the transformed data to look like. In our example, you migh
 |Convert `column1` to an integer type.|**Type Casting**: Use `$toInt` to change `column1` from a string to an integer.|
 |Create a new field that is the sum of `column1` and `column2`.|**Calculate a sum**: Use `$add` to compute the sum of `column1` and `column2`.|
 
-:::(Warning) ()
-For an in-depth explanation of these operators and their functions, refer to the [the list of transformation pipeline expression operators](https://docs.dataddo.com/docs/transformation-pipeline-expressions).
-:::
+> [!NOTE]
+> For an in-depth explanation of these operators and their functions, refer to the [the list of transformation pipeline expression operators](https://docs.dataddo.com/docs/transformation-pipeline-expressions).
+
 
 ## Step 3: Create Transformation Stages
 Create your transformation stages. In this example, we will have four stages:
@@ -47,9 +53,9 @@ Create your transformation stages. In this example, we will have four stages:
 3. [Add Fields Stage (Renaming)](#3-add-fields-stage-renaming): Adds new fields or renames existing fields.
 4. [Second Projection Stage (Cleanup)](#4-second-projection-stage-cleanup): Removes fields that we no longer need in the output.
 
-:::(Warning) ()
-For an in-depth explanation of these stages and their functions, refer to the [the list of transformation pipeline stages](/docs/transformation-pipeline-stages).
-:::
+> [!NOTE]
+> For an in-depth explanation of these stages and their functions, refer to the [the list of transformation pipeline stages](/docs/transformation-pipeline-stages).
+
 
 ### 1. **Unwind Stage**
 `$unwind` is often used to deconstruct an array field from the input documents to output a document for each element. If `field1` is an array, each element of this array becomes a separate document.
