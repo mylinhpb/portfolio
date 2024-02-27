@@ -7,6 +7,5 @@ Writing samples:
 - [Blog article](how-to-blog-article.md)
 - [Tutorial](tutorial.md)
 - [How-to guide](how-to-guide.md)
-- Reference
+- [Reference](reference.md)
 - [Resource](resource.md)
-- Style guide
