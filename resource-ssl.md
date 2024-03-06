@@ -2,7 +2,8 @@
 
 **SSL (Secure Socket Layer)** is a standard security protocol that establishes a secure connection between a web browser and a web server. SSL ensures that the data transmitted between them remains encrypted and secure. It secures sensitive information such as personal data, login credentials, and credit card numbers, and prevents unauthorized access and data tampering during transmission.
 
-Although the term SSL is often used interchangeably with **Transport Layer Security (TLS)**, TLS is an updated version of the SSL protocol. TLS has enhanced security measures, and addresses most of SSL vulnerabilities.
+> [!WARNING]  
+> Although the term SSL is often used interchangeably with **Transport Layer Security (TLS)**, TLS is an updated version of the SSL protocol. TLS has enhanced security measures, and addresses most of SSL vulnerabilities. 
 
 ## How SSL Works
 
@@ -26,8 +27,8 @@ SSL operates through a process called the **SSL Handshake**:
 ![SSL Handshake](https://github.com/mylinhpb/portfolio/assets/145331760/72b0c52f-b2fd-4af5-9138-b84449682cbf)
 
  
-## Cryptography in SSL/TLS
-This section explores key elements of SSL/TLS security: key length and cryptographic algorithms.
+## Cryptography in SSL
+This section explores key elements of SSL security: key length and cryptographic algorithms.
 
 ### Key Length
 Key length, measured in bits, determines the security level. The longer the key, the more secure and complex the encryption becomes.
@@ -78,20 +79,20 @@ To revoke or renew your SSL certificate, contact your CA.
 2.	**Certificate Expiry**: Regularly update and monitor certificates to avoid lapses in security.
 3.	**SSL Stripping**: Implement HSTS to mitigate risks associated with downgrading secure connections.
 
-## SL/TLS Deployment Best Practices
-As SSL is now considered to be deprecated, these best practices will use SSL and TLS interchangeably.
-1.	**Use the Latest Protocols**: Adopt the latest TLS protocol version (TLS 1.3) for improved security and performance.
+## SL Deployment Best Practices
+
+1.	**Use the Latest Protocols**: Adopt the latest SSL protocol version for improved security and performance.
 2.	**Strong Cipher Suites**: Choose secure and up-to-date cryptographic algorithms. Prioritize Perfect Forward Secrecy (PFS) algorithms like ECDHE for key exchange.
 3.	**Key Length Considerations**: If you’re using RSA, opt for key lengths of 2048 bits or higher. For ECC (Elliptic Curve Cryptography), consider curves with equivalent strength to RSA keys.
-4.	**Certificate Management**: Ensure SSL/TLS certificates are regularly renewed before expiration to avoid service disruptions. Safeguard private keys and use Hardware Security Modules (HSMs) for added security.
+4.	**Certificate Management**: Ensure SSL certificates are regularly renewed before expiration to avoid service disruptions. Safeguard private keys and use Hardware Security Modules (HSMs) for added security.
 5.	**Implement HTTP Strict Transport Security (HSTS)**: Use HSTS headers to instruct browsers to only connect via HTTPS to reduce the risk of man-in-the-middle attacks.
 6.	**Content Security**: Ensure all resources on a secure page are loaded via HTTPS to prevent mixed content issues that can compromise security.
-7.	**Secure Renegotiation**: Mitigate vulnerabilities associated with SSL/TLS renegotiation by disabling it, unless necessary.
+7.	**Secure Renegotiation**: Mitigate vulnerabilities associated with SSL renegotiation by disabling it, unless necessary.
 8.	**Security Headers**: Implement Content Security Policy (CSP) headers to mitigate risks associated with content injection attacks like XSS (Cross-Site Scripting).
-9.	**Regular Security Audits**: Conduct regular penetration tests to identify and address potential vulnerabilities in your SSL/TLS implementation.
+9.	**Regular Security Audits**: Conduct regular penetration tests to identify and address potential vulnerabilities in your SSL implementation.
 10.	**Monitoring and Logging**: Collect and analyze logs centrally to detect and respond to security incidents promptly.
 11.	**Disable Deprecated Protocols and Algorithms**: Disable deprecated SSL protocols and weak cipher suites to prevent vulnerabilities associated with outdated standards.
-12.	**Keep Software Updated**: Regularly update your web server software and SSL/TLS libraries to patch vulnerabilities and stay current with security best practices.
+12.	**Keep Software Updated**: Regularly update your web server software and SSL libraries to patch vulnerabilities and stay current with security best practices.
 13.	**Implement Rate Limiting**: Implement rate limits on login pages to defend against brute force attacks.
 14.	Compliance with Regulations: Ensure SSL/TLS deployment aligns with regulatory requirements relevant to your industry, such as GDPR or PCI DSS.
 15.	Educate Users: Educate users to recognize SSL indicators like padlock icons, which promotes trust in the security of the connection.
