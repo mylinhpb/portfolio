@@ -14,3 +14,4 @@ The following writing samples show different types of articles and documentation
 | Reference |[Transformation Pipeline Stages](reference.md) |
 | Resource/Explaner | [Type of Connectors](resource-connector-types.md)|
 |Resource/Explainer| [SSL: Understanding Its Functionality](resource-ssl.md)|
+| Mock documentation webpage | [Writing API Docs](https://codepen.io/myli_pb/pen/vYMGGxP) |
