@@ -1,0 +1,95 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weather API Documentation</title>
+<style>
+  body { font-family: Arial, sans-serif; }
+  .container { display: flex; width: 100%; }
+  .left-column, .right-column { width: 50%; padding: 20px; }
+  .tabcontent { display: none; padding: 20px; border: 1px solid #ccc; margin-top: 20px; }
+  .tablink { background-color: #555; color: white; border: none; padding: 10px 20px; cursor: pointer; }
+  .tablink.active { background-color: #777; }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="left-column">
+    <h2>Weather API</h2>
+    <h3>Overview</h3>
+    <p>Retrieve current weather information for any specified location globally, including temperature, humidity, precipitation, and more.</p>
+    <h3>Authentication</h3>
+    <p>Use your API key in each request. Example: <code>?api_key=YOUR_API_KEY</code></p>
+    <h3>HTTP Method and URL</h3>
+    <p><strong>GET</strong> <code>/v1/current</code></p>
+    <h3>Request Parameters</h3>
+    <ul>
+      <li><strong>location</strong> (required): City name or coordinates.</li>
+      <li><strong>units</strong> (optional): Temperature units (metric or imperial). Default is metric.</li>
+    </ul>
+    <h3>Rate Limits</h3>
+    <p>100 API requests per hour.</p>
+  </div>
+
+  <div class="right-column">
+    <div class="tabs">
+      <button class="tablink" onclick="openTab(event, 'Structure')">Response Structure</button>
+      <button class="tablink" onclick="openTab(event, 'Example')">Example Response</button>
+    </div>
+    <div id="Structure" class="tabcontent">
+      <h4>Success Response</h4>
+      <pre>{
+  "location": "string",
+  "temperature": "string",
+  "humidity": "string",
+  "precipitation": "string",
+  "wind": "string",
+  "description": "string"
+}</pre>
+      <h4>Error Responses</h4>
+      <pre>{
+  "error": true,
+  "message": "string"
+}</pre>
+    </div>
+    <div id="Example" class="tabcontent">
+      <h4>Example Request</h4>
+      <p><code>/v1/current?location=New York&units=metric&api_key=YOUR_API_KEY</code></p>
+      <h4>Example Success Response</h4>
+      <pre>{
+  "location": "New York, NY",
+  "temperature": "15°C",
+  "humidity": "50%",
+  "precipitation": "0%",
+  "wind": "5 m/s",
+  "description": "Partly cloudy"
+}</pre>
+      <h4>Example Error Response</h4>
+      <pre>{
+  "error": true,
+  "message": "Invalid API Key"
+}</pre>
+    </div>
+  </div>
+</div>
+
+<script>
+function openTab(evt, tabName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+document.getElementsByClassName('tablink')[0].click(); // Click on the first tab initially
+</script>
+
+</body>
+</html>
