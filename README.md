@@ -15,3 +15,4 @@ The following writing samples show different types of articles and documentation
 | Resource/Explaner | [Type of Connectors](resource-connector-types.md)|
 |Resource/Explainer| [SSL: Understanding Its Functionality](resource-ssl.md)|
 | Mock documentation webpage | [Writing API Docs](https://codepen.io/myli_pb/pen/vYMGGxP) |
+| Mock interactive API documentation | [API documentation](https://codepen.io/myli_pb/pen/rNbEVKP)|
