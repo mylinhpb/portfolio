@@ -17,12 +17,13 @@ Before starting, make sure your account (e.g. Facebook account or GA4 account) h
 > [!TIP]
 > When you add a new account, you also create a new ***authorizer***. You can always [add more authorizers](https://docs.dataddo.com/docs/authorized-services) or accounts later.
 
-(![Account - Quickstart Create a Source](https://github.com/mylinhpb/portfolio/assets/145331760/1048adfb-ea72-4a2f-843e-7f7fda2e717e)
+![Account - Quickstart Create a Source](https://github.com/mylinhpb/portfolio/assets/145331760/1048adfb-ea72-4a2f-843e-7f7fda2e717e)
 
 
 ## Select Metrics, Dimensions, or Attributes
 In this step, select your metrics, dimensions, or attributes to specify what data you want to extract. In short, you are **defining the actual data model** of the source and choosing what columns will be included in the ***data source***.
-![Account - Quickstart Select Metrics](![image](https://github.com/mylinhpb/portfolio/assets/145331760/e43ccb7f-277b-4d0b-ab67-89401aaa7f56)
+
+![Account - Quickstart Select Metrics](https://github.com/mylinhpb/portfolio/assets/145331760/e43ccb7f-277b-4d0b-ab67-89401aaa7f56)
 
 ## Configure Snapshotting and Finish Creating Your Data Source
 1. Select the frequency of your [snapshotting](https://docs.dataddo.com/docs/extraction). Snapshots determine how often your data should be extracted. Recommended default is **daily** snapshotting to make sure you have up-to-date data.
