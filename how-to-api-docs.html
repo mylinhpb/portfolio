@@ -1,0 +1,164 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Writing API Docs</title>
+    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism.min.css">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+
+    <script>
+        hljs.highlightAll();
+    </script>
+</head>
+
+</head>
+
+<body>
+    <div class='navigation'>
+        <header class='first-header' style="margin-left: -20px; padding-left: 10px;">Writing API Docs
+        </header>
+        <nav id="navbar">
+            <header class='hidden'>TOC</header>
+            <a class='nav-link' href='#introduction'>Introduction</a>
+            <a class='nav-link' href='#key_elements'>Key Elements</a>
+            <a class='nav-link' href='#documenting_endpoints'>Documenting Endpoints</a>
+            <a class='nav-link' href='#tools_and_platforms'>Tools and Platforms</a>
+            <a class='nav-link' href='#practical_examples'>Practical Examples</a>
+        </nav>
+    </div>
+    <main id='main-doc'>
+        <section class='main-section' id='introduction'>
+            <header id='introduction'>Introduction</header>
+            <p>Effective API documentation is a crucial aspect of any software development project.
+                It ensures seemless integration and interaction with <span class="bold">application programming
+                    interfaces
+                    (APIs)</span>. API documentation serves as a bridge between API providers and consumers, enabling
+                developers
+                to comprehend the functionality, usage, and potential of an API.</p>
+            <p>This guide aims to provide a comprehensive understanding of the key components and best practices for a
+                clear,
+                concise, and user-friendly API documentation.</p>
+            <p class='bold'>Benefits of Robust API Documentation:</p>
+            <ul>
+                <li>Faster integration</li>
+                <li>Reduced learning curve for developers</li>
+                <li>Enhanced user experience</li>
+            </ul>
+        </section>
+        <section class='main-section' id='key_elements'>
+            <header id='key_elements'>Key Elements</header>
+            <p><span class='bold'>Key elements</span> of an effective API are the following:</p>
+            <ul>
+                <li>Clear structure</li>
+                <li>Accurate and up-to-date information</li>
+                <li>Consistent and understandable language</li>
+                <li>Code samples</li>
+                <li>Visual aids (diagrams, charts)</li>
+            </ul>
+        </section>
+        <section class='main-section' id='documenting_endpoints'>
+            <header id='documenting_endpoints'>Documenting Endpoints</header>
+            <p>To document an API, you need to detail all available endpoints and operations.</p>
+            <table style="width: 100%; table-layout: fixed;">
+                <thead>
+                    <tr>
+                        <th style="width: 50%;">Endpoint Documentation</th>
+                        <th style="width: 50%;">Handling Parameters</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>Request and response formats</li>
+                                <li>Authentication mechanisms</li>
+                                <li>Organizing endpoint documentation</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Query parameters</li>
+                                <li>Common use cases</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <pre class='language-http'><code>GET /api/users/{id}</code></pre>
+            <pre class="language-json"><code>{
+  "id": 123,
+  "name": "John Doe",
+  "email": "john.doe@example.com"
+}</code></pre>
+        </section>
+        <section class='main-section' id='tools_and_platforms'>
+            <header id='tools_and_platforms'>Tools and Platforms</header>
+            <p>To document APIs, you can use various tools and platforms. Some most well-known documentation tools are
+                Swagger, OpenAPI, or Apiary.
+            </p>
+            <p class='bold'>When choosing a platform, make sure it has these following features:</p>
+            <ul>
+                <li>Versioning support</li>
+                <li>Collaboration features</li>
+                <li>Support for different programming languages</li>
+            </ul>
+        </section>
+        <section class='main-section' id='practical_examples'>
+            <header id='practical_examples'>Practical Examples</header>
+            <h2>Example 1: Retrieving User Information</h2>
+            <p class='bold'>Request</p>
+            <pre class="language-http"><code>GET /api/users/123</code></pre>
+            <p class='bold'>Response</p>
+            <pre class="language-json"><code>{
+  "id": 123,
+  "name": "John Doe",
+  "email": "john.doe@example.com"
+}
+</code></pre>
+            <h2>Example 2: Creating a New User</h2>
+            <p class='bold'>Request</p>
+            <pre class="language-bash"><code>POST /api/users
+Content-Type: application/json
+
+{
+  "name": "Jane Doe",
+  "email": "jane.doe@example.com"
+}
+</code></pre>
+            <p class='bold'>Response</p>
+            <pre class="language-json"><code>{
+  "id": 124,
+  "name": "Jane Doe",
+  "email": "jane.doe@example.com"
+}
+</code></pre>
+            <h2>Example 3: Searching for Users</h2>
+            <p class='bold'>Request</p>
+            <pre class='language-http'><code>GET /api/users/search?q=doe</code></pre>
+            <p class='bold'>Response</p>
+            <pre class="language-json"><code>[
+  {
+    "id": 123,
+    "name": "John Doe",
+    "email": "john.doe@example.com"
+  },
+  {
+    "id": 124,
+    "name": "Jane Doe",
+    "email": "jane.doe@example.com"
+  }
+]
+</code></pre>
+        </section>
+    </main>
+
+</body>
+
+</html>

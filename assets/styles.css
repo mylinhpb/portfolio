@@ -44,12 +44,12 @@ section {
 
 .first-header {
     color: #f1dac4;
-    padding: 10px 0px 10px 15px;
+    /*padding: 10px 0px 10px 0px;*/
     border-top: solid 5px;
     border-bottom: solid 5px;
-    width: 217px;
+    width: 210px;
     position: fixed;
-    margin-left: -10px;
+    /*margin-left: -10px;*/
 }
 
 header {
@@ -58,7 +58,7 @@ header {
     font-weight: 600;
     color: #f1dac4;
     background-color: #333333;
-    padding: 10px;
+    padding: 10px 10px 10px 0px;
     text-transform: lowercase;
 }
 
@@ -91,8 +91,6 @@ table {
     width: 100%;
     border-collapse: collapse;
     table-layout: auto;
-    border: #333333;
-    border-width: 1px;
 }
 
 thead {
@@ -103,10 +101,14 @@ thead {
 
 th,
 td {
-    padding: 5px 15px 5px 5px;
+    padding: 5px 15px;
     border: 1px solid #333333;
     text-align: left;
     word-wrap: break-word;
+}
+
+td {
+    padding: 0px;
 }
 
 .hidden {
