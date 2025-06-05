@@ -103,14 +103,10 @@ thead {
 
 th,
 td {
-    padding: 5px 15px;
+    padding: 5px 15px 5px 5px;
     border: 1px solid #333333;
     text-align: left;
     word-wrap: break-word;
-}
-
-td {
-    padding: 0px;
 }
 
 .hidden {
