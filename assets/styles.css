@@ -1,0 +1,249 @@
+* {
+    width: 100%;
+}
+
+body {
+    color: #333333;
+    display: block;
+    max-width: calc(100% - 320px);
+    margin-top: 0px;
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.5px;
+}
+
+nav {
+    position: fixed;
+    left: 0;
+    top: 85px;
+    height: 100%;
+    width: 230px;
+    background-color: #333333;
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #f1dac4;
+    padding: 15px;
+    display: block;
+    font-size: 14px;
+    font-family: Courier;
+    text-transform: lowercase;
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+section {
+    margin-left: 230px;
+    padding: 20px;
+}
+
+.first-header {
+    color: #f1dac4;
+    padding: 10px 0px 10px 15px;
+    border-top: solid 5px;
+    border-bottom: solid 5px;
+    width: 217px;
+    position: fixed;
+    margin-left: -10px;
+}
+
+header {
+    font-family: Courier;
+    font-size: 25px;
+    font-weight: 600;
+    color: #f1dac4;
+    background-color: #333333;
+    padding: 10px;
+    text-transform: lowercase;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: 100;
+    font-family: Roboto, sans-serif;
+    padding-top: 16px;
+}
+
+p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-left: 20px;
+}
+
+.bold {
+    font-weight: 800;
+}
+
+ul {
+    font-size: 14px;
+}
+
+ul li {
+    padding: 3px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: auto;
+    border: #333333;
+    border-width: 1px;
+}
+
+thead {
+    background-color: #333333;
+    color: white;
+    font-size: 14px;
+}
+
+th,
+td {
+    padding: 5px 15px;
+    border: 1px solid #333333;
+    text-align: left;
+    word-wrap: break-word;
+}
+
+td {
+    padding: 0px;
+}
+
+.hidden {
+    display: none;
+}
+
+pre,
+code {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 12px;
+}
+
+.line-numbers {
+    position: relative;
+}
+
+.copy-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.language-label {
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+    font-size: 14px;
+    color: #777;
+}
+
+@media (max-width: 800px) {
+    nav {
+        position: fixed;
+        top: 57px;
+        height: 25%;
+        width: 100%;
+        padding: 0px;
+        box-sizing: border-box;
+        overflow: hidden;
+        overflow-y: auto;
+        min-width: 200px;
+    }
+    .nav-link {
+        text-decoration: none;
+        color: #f1dac4;
+        padding: 7px;
+        display: flex;
+        font-size: 13px;
+        margin-left: 10px;
+    }
+    body {
+        width: 92%;
+        max-width: 100%;
+        min-width: 200px;
+    }
+
+    #main-doc:not(.first-header) {
+        margin-top: 180px;
+    }
+
+    section {
+        margin: 0px auto;
+        padding: 0px;
+        width: 100%;
+    }
+
+    .first-header {
+        color: #f1dac4;
+        padding: 10px 0px 10px 10px;
+        border-top: solid 5px;
+        border-bottom: solid 5px;
+        width: calc(100% - 23.5px);
+        margin-left: -10px;
+        margin-top: -180px;
+        min-width: 200px;
+    }
+}
+
+.copy-button {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    cursor: pointer;
+    background-color: #333333;
+    border: none;
+    padding: 3px;
+    font-size: 12px;
+    color: #f1dac4;
+    width: 100px;
+    height: 30px;
+    border-radius: 8px;
+    border: solid 1px #161b33;
+    font-family: Courier;
+    text-transform: lowercase;
+}
+
+pre,
+code {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 12px;
+}
+
+code {
+    margin-top: -20px;
+}
+
+@media (max-height: 350px) {
+    nav {
+        height: 150px;
+        padding: 0px;
+        box-sizing: border-box;
+        overflow: hidden;
+        overflow-y: auto;
+        min-width: 200px;
+    }
+    .nav-link {
+        text-decoration: none;
+        color: #f1dac4;
+        padding: 7px;
+        display: flex;
+        font-size: 13px;
+        margin-left: 10px;
+    }
+}
+
+@media (max-height: 420px) and (max-width: 800px) {
+    nav {
+        height: 25%;
+        padding: 0px;
+        box-sizing: border-box;
+        overflow: hidden;
+        overflow-y: auto;
+        min-width: 200px;
+    }
+}
