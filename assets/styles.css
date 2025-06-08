@@ -44,12 +44,12 @@ section {
 
 .first-header {
     color: #f1dac4;
-    /*padding: 10px 0px 10px 0px;*/
+    padding-left: 20px;
     border-top: solid 5px;
     border-bottom: solid 5px;
-    width: 210px;
+    width: 202px;
     position: fixed;
-    /*margin-left: -10px;*/
+    margin-left: -10px;
 }
 
 header {
@@ -144,7 +144,7 @@ code {
     nav {
         position: fixed;
         top: 57px;
-        height: 25%;
+        height: fit-content;
         width: 100%;
         padding: 0px;
         box-sizing: border-box;
@@ -167,7 +167,7 @@ code {
     }
 
     #main-doc:not(.first-header) {
-        margin-top: 180px;
+        margin-top: 230px;
     }
 
     section {
@@ -181,9 +181,9 @@ code {
         padding: 10px 0px 10px 10px;
         border-top: solid 5px;
         border-bottom: solid 5px;
-        width: calc(100% - 23.5px);
+        width: 100%;
         margin-left: -10px;
-        margin-top: -180px;
+        margin-top: -230px;
         min-width: 200px;
     }
 }
