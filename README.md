@@ -18,7 +18,7 @@ I am the sole technical writer responsible for the end-to-end management of the 
 
 In addition to product documentation, I co-created the Dawiso Academy in close collaboration with the marketing team:
 
-* [Dawiso Academy](https://academy.dawiso.com)
+* [Dawiso Academy](https://www.dawiso.com/academy)
 
 My role across these platforms includes the development of the information architecture, content strategy, writing and maintaining documentation, and aligning documentation with both product and customer needs.
 
