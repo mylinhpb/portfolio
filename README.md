@@ -23,7 +23,7 @@ In addition to product documentation, I co-created the Dawiso Academy in close c
 My role across these platforms includes the development of the information architecture, content strategy, writing and maintaining documentation, and aligning documentation with both product and customer needs.
 
 
-## Writing samples
+## Writing Samples
 
 The writing samples below represent selected examples of different documentation types and writing styles.
 
